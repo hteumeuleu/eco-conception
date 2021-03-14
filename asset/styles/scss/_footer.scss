@@ -1,0 +1,34 @@
+.footer {
+	display: flex;
+	padding: rem(16px) rem(23px) rem(48px) rem(8px);
+	text-align: right;
+}
+
+.footer-social {
+	display: inline-flex;
+
+	a {
+		padding: 0 rem(8px);
+	}
+
+	img {
+		width: rem(32px);
+		height: rem(32px);
+	}
+}
+
+.footer-links {
+	margin-top: rem(24px);
+	font-size: rem(15px);
+}
+
+.prefooter {
+	margin-top: rem(48px);
+	padding: rem(48px) rem(15px);
+	color: $yellow;
+	background-color: #000;
+
+	p:not(:last-child) {
+		margin-bottom: rem(16px);
+	}
+}

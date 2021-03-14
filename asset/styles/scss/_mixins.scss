@@ -1,0 +1,6 @@
+// PX to REM
+$font-size: 16px;
+@function rem($target) {
+	@if $target == 0 { @return 0 }
+	@return 1rem * $target / $font-size;
+}

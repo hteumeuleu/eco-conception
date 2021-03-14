@@ -1,0 +1,27 @@
+body {
+	font: 1em/1.3799 Georgia, serif;
+	letter-spacing: -0.02em;
+	background-color: $yellow;
+}
+
+.page {
+	font-size: rem(15px);
+	overflow: hidden;
+}
+
+.main {
+	max-width: rem(1140px);
+	margin: 0 auto;
+	padding-left: rem(15px);
+	padding-right: rem(15px);
+}
+
+.container {
+	max-width: rem(730px);
+	margin: 0 auto;
+}
+
+.breadcrumb {
+	margin-bottom: rem(28px);
+	font-size: rem(22px);
+}

@@ -1,0 +1,29 @@
+<header class="header" role="banner">
+	<nav role="navigation" class="navbar">
+		<a class="navbar-brand" href="/">
+			<img src="/asset/images/logo-designersethiques.svg" alt="Designers Ethiques" width="110" height="48">
+		</a>
+		<a href="https://designersethiques.org/" class="nav-link">L'association</a>
+		<a href="/guide/a-propos.html" class="nav-link">À propos</a>
+		<button aria-expanded="false" type="button" class="nav-link dropdown-toggle">Menu</button>
+		<div class="dropdown-menu">
+			<div class="dropdown-header">
+				Le guide d’éco-conception de services numériques
+			</div>
+			<a class="dropdown-item" href="/guide/content/0-introduction.html">Introduction</a>
+			<a class="dropdown-item" href="/guide/content/1-besoin.html">1. Définir précisément le besoin et éliminer ce qui n’est pas essentiel</a>
+			<a class="dropdown-item" href="/guide/content/2-evaluer.html">2. Evaluer et mesurer</a>
+			<a class="dropdown-item" href="/guide/content/3-simplifier.html">3. Simplifier le parcours et fluidifier l'expérience</a>
+			<a class="dropdown-item" href="/guide/content/4-mobile-first.html">4. Concevoir en “mobile first”</a>
+			<a class="dropdown-item" href="/guide/content/5-0-bonnes-pratiques.html">5. Réaliser et développer</a>
+			<a class="dropdown-item" href="/guide/content/6-maintenir.html">6. Tester, évaluer, et maintenir</a>
+			<a class="dropdown-item" href="/guide/content/7-plus-loin.html">Aller plus loin dans la démarche</a>
+		</div>
+	</nav>
+</header>
+<script>
+	document.querySelector('.header .dropdown-toggle').addEventListener('click', function() {
+		const expandedValue = !(this.getAttribute('aria-expanded') == 'true');
+		this.setAttribute('aria-expanded', expandedValue);
+	});
+</script>
