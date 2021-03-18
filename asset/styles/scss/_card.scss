@@ -1,0 +1,30 @@
+.card {
+	border: rem(3px) solid #000;
+
+	&:not(:first-child) {
+		margin-top: rem(104px);
+	}
+}
+
+.card-title {
+	position: relative;
+	top: rem(-3px);
+	left: rem(-3px);
+	padding: rem(12px) rem(20px);
+	font-size: rem(30px);
+	font-family: Helvetica, sans-serif;
+	line-height: 1;
+	text-transform: lowercase;
+	border: rem(3px) solid #000;
+	max-width: max-content;
+
+	h2 {
+		display: inline;
+		margin-bottom: 0;
+	}
+}
+
+.card-body {
+	padding: rem(20px);
+	margin-top: rem(4px);
+}

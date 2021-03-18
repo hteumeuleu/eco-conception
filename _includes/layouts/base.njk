@@ -3,13 +3,15 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>{{title}}</title>
-	<meta name="description" content="{{pageDescription}}" />
+	<meta name="description" content="{{ description }}" />
 	<link rel="stylesheet" type="text/css" href="/asset/styles/style.css" />
+	<link rel="canonical" href="https://eco-conception.designersethiques.org{{ permalink }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Les Designers Ethiques, Aurélie Baton, Anne Faubry" />
     <meta name="autor" content="Les Designers Ethiques, Aurélie Baton, Anne Faubry" />
 </head>
 <body>
-    <div class="page">
+    <div class="page page--{{ page.fileSlug }}">
 		{% include "_includes/header.njk" %}
 		<main class="main" role="main">
 			<div class="breadcrumb">

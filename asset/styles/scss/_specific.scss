@@ -1,0 +1,9 @@
+.page--a-propos {
+	.post h2 {
+		margin-bottom: rem(8px);
+
+		&:not(:first-child) {
+			margin-top: rem(48px);
+		}
+	}
+}
