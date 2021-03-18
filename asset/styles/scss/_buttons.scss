@@ -3,6 +3,10 @@
 	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: rem(64px);
+
+	.btn:only-child {
+		margin-left: auto;
+	}
 }
 
 .btn {
@@ -28,4 +32,31 @@
 .btn-primary:not(:active) {
 	color: $yellow;
 	background-color: #000;
+}
+
+.btn-list {
+	margin-top: rem(48px);
+
+	.btn {
+		font-weight: bold;
+		font-size: rem(20px);
+		width: 100%;
+	}
+
+	@media (min-width: rem(600px)) {
+		display: flex;
+		flex-wrap: wrap;
+
+		& > li {
+			width: 50%;
+
+			&:nth-child(2n+1) {
+				padding-right: rem(10px);
+			}
+
+			&:nth-child(2n) {
+				padding-left: rem(10px);
+			}
+		}
+	}
 }

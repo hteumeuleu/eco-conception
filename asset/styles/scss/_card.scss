@@ -2,7 +2,7 @@
 	border: rem(3px) solid #000;
 
 	&:not(:first-child) {
-		margin-top: rem(104px);
+		margin-top: rem(80px);
 	}
 }
 
@@ -20,6 +20,7 @@
 
 	h2 {
 		display: inline;
+		font-size: inherit;
 		margin-bottom: 0;
 	}
 }
@@ -27,4 +28,22 @@
 .card-body {
 	padding: rem(20px);
 	margin-top: rem(4px);
+
+	p {
+		font-size: rem(24px);
+		margin-bottom: rem(8px);
+	}
+}
+
+.card-footer {
+	font-size: rem(12px);
+	text-align: right;
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		padding: rem(5px);
+		background: #000;
+		color: $yellow;
+	}
 }

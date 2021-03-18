@@ -27,12 +27,12 @@
 		font-size: rem(18px);
 	}
 
-	& > *:not(:last-child):not(h2),
+	& > *:not(:last-child):not(:is(h2, h3)),
 	li {
 		margin-bottom: rem(20px);
 	}
 
-	h2 {
+	& > h2 {
 		margin-bottom: rem(48px);
 		font-size: rem(28px);
 
@@ -42,6 +42,16 @@
 
 		@media (max-width: rem(760px)) {
 			font-size: rem(25px);
+		}
+	}
+
+	& > h3 {
+		margin-bottom: rem(8px);
+		font-size: rem(24px);
+		font-style: italic;
+
+		&:not(:first-child) {
+			margin-top: rem(48px);
 		}
 	}
 

@@ -1,0 +1,135 @@
+---
+title: 6. Tester, évaluer, et maintenir
+layout: layouts/base.njk
+permalink: "/guide/content/{{ page.fileSlug }}.html"
+description: "Tester le service avant sa mise en ligne, évaluer le parcours utilisateur, vérifier les bonnes pratiques d’éco-conception et d’accessibilité, et préparer l’évolution du contenu."
+---
+<h2>Tester le service sur différentes connexions</h2>
+
+<p>Cette étape consiste à vérifier que le service fonctionne bien sur des connexions “dégradées”, par
+    exemple 2G ou 3G.</p>
+
+<p>Utiliser des outils comme <a href="http://www.loband.org/loband/simulator.jsp">lowband.com</a> ou les outils de développement Firefox pour simuler une
+    connexion internet bas-débit et vérifier que le site reste accessible.</p>
+
+<div class="supra-container">
+    <div class="col col-txt">
+		<h3>Exemple des outils de développement Firefox</h3>
+
+		<p>Dans l’onglet “Network” ou “Réseau” en français, vous pouvez sélectionner le type de
+		connexion de l’internaute et identifier les temps de chargement associés.</p>
+    </div>
+    <div class="col col-img">
+        <picture>
+            <source media="(min-width: 540px)" srcset="https://eco-conception.designersethiques.org/guide/asset/images/content/desktop/6-firefox-connexion-desktop.png">
+            <img src="https://eco-conception.designersethiques.org/guide/asset/images/content/mobile/6-firefox-connexion-mobile.png" alt="Outils de développement Firefox dans l’onglet Réseau montrant les différents types de connexion">
+        </picture>
+    </div>
+</div>
+
+<h2>Faire le bilan</h2>
+
+<h3>Evaluer l’impact du parcours utilisateur</h3>
+
+<p>Comme vous l'avez fait <a href="2-evaluer.html">dans la première étape</a>, retracer de
+    nouveau le parcours utilisateur avec <a href="https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad">GreenIT Analysis</a> en utilisant la même unité fonctionnelle que
+    précédemment et comparez vos résultats par rapport à la version précédente de votre service.</p>
+
+<p>Comparez le poids des pages et du parcours à ce que vous vous étiez éventuellement fixé comme “<a href="2-evaluer.html">budget
+    environnemental</a>”.</p>
+
+<p>Vous pouvez aussi compléter votre évaluation avec des outils de mesure de performance et de qualité
+    comme <a href="https://gtmetrix.com/">GTmetrix</a>, <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a>, et d’autres.</p>
+
+<h3>Evaluer la mise en oeuvre de certaines bonnes pratiques</h3>
+
+<p>Vous pouvez utiliser le référentiel de conformité du <a href="https://collectif.greenit.fr/ecoconception-web/">Collectif Conception Numérique
+    Responsable</a> pour
+    vous aider à évaluer la mise en oeuvre des bonnes pratiques :</p>
+
+<ul>
+    <li><a href="https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-conformite.v3.xls">Référentiel de conformité v3 (téléchargement de feuille de calcul ; 124KO)</a></li>
+    <li><a href="https://collectif.greenit.fr/ecoconception-web/2020-12-Ref-eco_web-checklist.v3.xls">Check-list des 115 bonnes pratiques d'écoconception web (téléchargement de feuille de calcul ; 60KO)</a></li>
+</ul>
+
+<h3>Vérifier l’accessibilité</h3>
+
+<p>Il est bien sûr primordial d’intégrer l’accessibilité tout au long de la conception du service et de
+    ne pas attendre la fin du projet pour s’en préoccuper. Tester l’accessibilité du service et vérifier
+    l’application des bonnes pratiques permet aussi de s’assurer de la qualité et de la cohérence de
+    l’architecture d’information qui contribue à la démarche d’éco-conception.</p>
+
+<p>Tout comme pour l’éco-conception, les outils ne font pas tout, et ne remplacent pas un œil aguerri
+    (seulement environ 20% des problèmes peuvent être détectés par les outils), mais certains peuvent
+    aider à vérifier les règles d'accessibilité :</p>
+
+<ul>
+    <li>WAVE (Web Accessibility evaluation tool) pour vérifier certaines règles d’accessibilité : <a href="https://wave.webaim.org/extension/">WAVE Chrome &amp; Firefox Extensions</a></li>
+    <li>No Coffee pour tester les couleurs : <a href="https://addons.mozilla.org/en-US/firefox/addon/nocoffee/">No Coffee vision simulator</a></li>
+    <li>Colour Contrast Analyzer pour le contraste : <a href="https://developer.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser (CCA) | TPG – The
+        Accessibility Experts</a></li>
+    <li>Web developer extension pour vérifier la structure : <a href="https://chrispederick.com/work/web-developer/">Web Developer Extension</a></li>
+    <li>Outils et modèles de documents pour réaliser un audit : <a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/kit/#contenu">Kit d'audit RGAA</a></li>
+</ul>
+
+<p>Cette liste est loin d’être exhaustive, n’hésitez pas à vous reporter aux référentiels
+    d’accessibilité pour plus d’informations.</p>
+
+<div class="card">
+	<div class="card-title">
+		<h2>Plus d'info</h2>
+	</div>
+	<div class="card-body">
+        <ul>
+            <li><a href="https://references.modernisation.gouv.fr/rgaa-accessibilite/">Référentiel d’accessibilité RGAA</a></li>
+            <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a></li>
+        </ul>
+	</div>
+</div>
+
+<h2>Préparer l’évolution du service et des contenus</h2>
+<h3>Transmettre et former</h3>
+
+<p>Il est important de penser aux compétences de celles et ceux qui vont “hériter” du service. En effet,
+    on peut faire un service éco-conçu mais le but est quand même qu’il le reste. La seule façon de
+    s’assurer qu’un service éco-conçu le restera, est de former et de transmettre aux personnes qui
+    prendront en main le service après sa mise en ligne.</p>
+
+<ul>
+    <li>Qui va mettre à jour les informations ?</li>
+    <li>Quelles sont les bonnes pratiques et connaissances à transmettre aux futurs éditeurs et éditrices
+        du contenu ?</li>
+</ul>
+
+<h3>Mettre en place une périodicité pour la revue du contenu</h3>
+
+<p>Comme le souligne Gerry McGovern dans son livre <a href="https://gerrymcgovern.com/books/world-wide-waste/"><cite>World Wide Waste</cite></a>, nous avons une fâcheuse tendance à
+    créer du contenu et à publier, sans jamais penser au devenir de ce contenu :</p>
+
+<figure>
+    <blockquote>
+        <p lang="en">We leave so much stuff in Zombieland—not quite dead but not alive either. In reality, nothing really gets thrown away.</p>
+        <p>(On laisse tellement de choses à Zombieland - pas vraiment mortes mais pas vraiment vivantes non plus. En vérité, rien n’est vraiment jamais jeté.)</p>
+    </blockquote>
+    <figcaption>Gerry McGovern, <a href="https://gerrymcgovern.com/books/world-wide-waste/"><cite>World Wide Waste</cite></a></figcaption>
+</figure>
+
+<p>Il semble donc important de mettre en place une stratégie de revue régulière du contenu et de
+    désigner des personnes responsables de coordonner cet effort.</p>
+
+<ul>
+    <li>Quelle sera la fréquence de revue du contenu ?</li>
+    <li>Qui fera le “tri” ? Quelles sont les règles de tri automatique ?</li>
+    <li>Quelle sera la durée de vie des contenus ?</li>
+    <li>Comment sera gérée la fin de vie des données / comptes utilisateurs / … ?</li>
+</ul>
+
+<p>Par exemple, Youtube compte des milliards de vidéos. 720 000 heures de vidéos sont mises en ligne
+    quotidiennement sur le site. L’entreprise pourrait penser la fin de vie des vidéos en décidant par
+    exemple que toute vidéo n’ayant pas été visionnée au cours des 3 dernières années serait
+    automatiquement supprimée.</p>
+
+<div class="btn-group">
+	<a class="btn btn-secondary" href="/guide/content/5-9-options.html"><span aria-hidden="true">←</span>Précédent</a>
+	<a class="btn btn-primary" href="/guide/content/7-plus-loin.html"><span aria-hidden="true">→</span>Suivant</a>
+</div>
