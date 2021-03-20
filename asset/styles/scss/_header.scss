@@ -72,10 +72,10 @@
 	position: absolute;
 	top: rem(82px);
 	right: 0;
+	z-index: 2;
 	padding: rem(48px) rem(24px);
 	max-width: rem(400px);
 	color: #fff;
-	// font-size: rem(18px);
 	font-weight: bold;
 	font-family: Helvetica, sans-serif;
 	line-height: 1.1599;

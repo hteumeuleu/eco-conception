@@ -16,7 +16,8 @@
 	line-height: 1;
 	text-transform: lowercase;
 	border: rem(3px) solid #000;
-	max-width: max-content;
+	display: inline-block;
+	max-width: 75%;
 
 	h2 {
 		display: inline;

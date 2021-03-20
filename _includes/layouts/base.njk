@@ -16,9 +16,11 @@
     <div class="page page--{{ page.fileSlug }}">
 		{% include "_includes/header.njk" %}
 		<main class="main" role="main">
+			{% if page.fileSlug != "guide" %}
 			<div class="breadcrumb">
 				<p><a href="/">Le guide d’éco-conception de services numériques</a></p>
 			</div>
+			{% endif %}
 			<article class="article">
 				<header class="heading">
 					<h1>{{ title }} </h1>
